@@ -1,0 +1,345 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    font-size: 18px;
+    font-family: 'Tahoma', 'Geneva', sans-serif;
+    /* font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Century Gothic', sans-serif; */
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+body
+{
+    background-color: #555b6e;
+    width: 100vw;
+    height: 100vh;
+    /* box-sizing: border-box; */
+}
+#navbar
+{
+    /* background-color: #89b0ae; */
+    background-image: linear-gradient(to bottom,#499e9a,#5dc0aa);
+    width: 100%;
+    height: 60px;
+    /* border: solid 1px black; */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+#navbar ul
+{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    position: absolute;
+    right: 20px;
+}
+#navbar ul li, #resume_list ul li
+{
+    list-style: none;
+    margin: auto;
+    cursor: pointer;
+}
+#navbar ul li:hover
+{
+    color: #c8d8e4;
+    /* border: solid 1px #ffd6ba;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 2px #ffd6ba; */
+}
+#navbar ul li a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+#name
+{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+#profile_img
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 40px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+#contact_info
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact_icon
+{
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+    fill: white;
+    /* stroke: white; */
+    /* background-color: black; */
+}
+
+.contact_icon:hover
+{
+    fill: #ff6600;
+    /* background-color: white; */
+}
+.outer_contact_icon
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 3px 3px 5px 4px inset rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.outer_contact_icon:hover
+{
+    background-color: white;
+    box-shadow: 3px 3px 5px 4px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+#about, #projects, #resume, #contact
+{
+    padding: 60px 30px 0px 30px;
+}
+
+#about
+{
+    width: auto;
+    height: 100%;
+    /* padding: 60px 30px 0px 30px; */
+    /* padding-top: 90px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* cursor: pointer; */
+
+}
+
+#about_img
+{
+    width: 350px;
+    height: 450px;
+    border-radius: 100px;
+    border: solid 5px black;
+    cursor: pointer;
+}
+
+#about_info span
+{
+    font-size: 50px;
+    color: beige;
+}
+
+#headings
+{
+    /* background-color: #f7f5e6; */
+    padding-bottom: 20px;
+}
+
+#headings h1
+{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.projects_list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project_details
+{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: solid 2px white; */
+    border-radius: 20px;
+    transition: 0.4s;
+    color: beige;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 4px inset rgba(0, 0, 0, 0.3);
+}
+.project_details:hover
+{
+    color: #ff6600;
+    box-shadow: 3px 3px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.06);
+    z-index: 0;
+}
+.project_details img
+{
+    width: 100%;
+    height: 75%;
+    border-radius: inherit;
+}
+
+.project_title
+{
+    font-weight: bold;
+}
+
+.project_description
+{
+    color: black;
+    font-size: 16px;
+}
+#resume
+{
+    height: 100%;
+    /* width: auto; */
+
+}
+#resume_list
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#resume_list ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    border: solid 1px #555b6e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    /* padding: 20px; */
+    
+}
+#resume_list ul li
+{
+    padding: 20px;
+    width: 150px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+
+#resume_list ul li:hover
+{
+    /* color: beige; */
+    border: #555b6e;
+    border-radius: 10px;
+    /* padding: 10px; */
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.resume_select
+{
+    color: beige;
+    border: #555b6e;
+    border-radius: 10px;
+    /* padding: 10px; */
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.resume_hidden
+{
+    visibility: hidden;
+    position: absolute;
+}
+.resume_visible
+{
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+}
+
+#education
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.education_details
+{
+    width: 500px;
+    background-color: rgba(240, 248, 255, 0.3);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#skills
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.skills_value
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.skills_list
+{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact
+{
+    margin-top: 50px;
+}
+
+/* for chrome */
+body::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
