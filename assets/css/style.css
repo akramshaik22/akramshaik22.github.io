@@ -24,7 +24,8 @@ body
 #navbar
 {
     /* background-color: #89b0ae; */
-    background-image: linear-gradient(to bottom,#499e9a,#5dc0aa);
+    /* background-image: linear-gradient(to bottom,#499e9a,#5dc0aa); */
+    background-image: linear-gradient(to bottom,#31917c,#4bad98);
     width: 100%;
     height: 60px;
     /* border: solid 1px black; */
@@ -61,6 +62,7 @@ body
 #menu_list li:hover
 {
     color: #c8d8e4;
+    color: #ff6600dc;
     /* border: solid 1px #ffd6ba;
     font-size: 16px;
     padding: 6px;
@@ -127,6 +129,7 @@ body
     height: 100%;
     padding: 25%;
     fill: white;
+    /* fill: #00ffff; */
     /* stroke: white; */
     /* background-color: black; */
 }
@@ -145,7 +148,7 @@ body
     height: 50px;
     box-shadow: 3px 3px 5px 4px inset rgba(0, 0, 0, 0.4);
     border-radius: 15px;
-    transition: 0.4s;
+    transition: 0.2s;
 }
 .outer_contact_icon:hover
 {
@@ -227,13 +230,13 @@ body
     transition: 0.4s;
     color: #cad4df;
     cursor: pointer;
-    box-shadow: 0px 0px 9px 4px inset rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 6px 4px inset rgba(0, 0, 0, 0.5);
 }
 .project_details:hover
 {
     color: #f5d016;
     box-shadow: 2px 2px 6px 5px rgba(0, 0, 0, 0.5);
-    border: solid 1px #96858f;
+    border: solid 1px #9dd7f0;
     background-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.06);
     z-index: 0;
@@ -301,7 +304,8 @@ body
 }
 .resume_select
 {
-    color: beige;
+    /* color: beige; */
+    color: #cad4df;
     border: #555b6e;
     border-radius: 10px;
     /* padding: 10px; */
@@ -336,13 +340,25 @@ body
 {
     width: 50%;
     background-color: #9099a24a;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border: solid 1px #608d90;
+    border-radius: 15px;
     text-align: center;
     margin: 20px;
     box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
 }
+#education_year
+{
+    color:#ffe770;
+    /* color:#cad4df; */
+    float: left;
+    font-size: 16px;
 
+}
+#education_type
+{
+    color: #cad4df;
+}
 #skills
 {
     display: flex;
@@ -353,10 +369,15 @@ body
 }
 .skills_value
 {
+    color: #cad4df;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+}
+.skills_value span
+{
+    color:#ffe770;
 }
 .skills_list
 {
@@ -366,20 +387,96 @@ body
     flex-direction: column;
     align-items: center;
 }
-
-#contact
+#experience
 {
-    /* margin-bottom: 50px; */
-    /* position: relative; */
-    /* padding-bottom: 50px; */
+    color: #cad4df;
+}
+
+#contact, #contact form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;    
+}
+#contact form h1
+{
+    font-size: xx-large;
+    color: #31917c;
+}
+#connect_me
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#sender_details, #sender_message
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#sender_details input
+{
+    height: 35px;
+    background-color: #9099a24a;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #cad4df;
+    /* font-size: 35px; */
+}
+/* #sender_message
+{
+    width: 300px;
+} */
+#sender_details input:focus, #sender_message textarea:focus
+{
+    /* color: #31917c; */
+    border: solid 2px #31917c;
+    outline: none;
+}
+#sender_message textarea
+{
+    width: 100%;
+    height: 90%;
+    resize: none;
+    color: #cad4df;
+    background-color: #9099a24a;
+    padding: 10px;
+    border-radius: 10px;
+}
+#submit
+{
+    padding: 15px;
+    /* #499e9a,#5dc0aa */
+    background-color: #31917c;
+    border-radius: 25px;
+    color: black;
+    border: solid 2px #cad4df;
+    box-shadow: 0px 0px 6px 6px #60a19e inset;
+    transition: 0.4s;
+}
+#submit:hover
+{
+    color: #ff6600;
+    background-color: white;
+    box-shadow: 0px 0px 4px 4px #555b6e;
 }
 
 /* for chrome */
-body::-webkit-scrollbar{
+body::-webkit-scrollbar, #sender_message textarea::-webkit-scrollbar{
     display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
-body{
+body, #sender_message textarea{
   -ms-overflow-style: none;  
   scrollbar-width: none; 
 }
