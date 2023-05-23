@@ -33,21 +33,31 @@ body
     z-index: 1;
     
 }
-#navbar ul
+
+.menu_bar_list
 {
+    visibility: visible;
+}
+
+#menu_list
+{
+    /* color: #333;
+    font-weight: bold; */
     display: flex;
     justify-content: space-around;
     width: 50%;
     position: absolute;
     right: 20px;
+    /* visibility: visible; */
 }
-#navbar ul li, #resume_list ul li
+
+#menu_list li, #resume_list ul li
 {
     list-style: none;
     margin: auto;
     cursor: pointer;
 }
-#navbar ul li:hover
+#menu_list li:hover
 {
     color: #c8d8e4;
     /* border: solid 1px #ffd6ba;
@@ -56,12 +66,12 @@ body
     border-radius: 20px;
     box-shadow: 0px 0px 8px 2px #ffd6ba; */
 }
-#navbar ul li a:visited
+#menu_list li a:visited
 {
     text-decoration: none;
     color: inherit;
 }
-#navbar ul li a
+#menu_list li a
 {
     text-decoration: none;
     color: inherit;
@@ -89,7 +99,10 @@ body
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    padding: 20px 0px 50px 0px;
 }
 
 .contact_icon
@@ -127,16 +140,19 @@ body
 #about, #projects, #resume, #contact
 {
     padding: 60px 30px 0px 30px;
+    /* width: 100%; */
 }
 
 #about
 {
-    width: auto;
+    /* width: auto; */
     height: 100%;
     /* padding: 60px 30px 0px 30px; */
     /* padding-top: 90px; */
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     /* cursor: pointer; */
 
@@ -144,8 +160,8 @@ body
 
 #about_img
 {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
     border-radius: 100px;
     border: solid 5px black;
     cursor: pointer;
@@ -221,7 +237,7 @@ body
 }
 #resume
 {
-    height: 100%;
+    /* height: 100%; */
     /* width: auto; */
 
 }
@@ -251,6 +267,7 @@ body
     margin: 0px;
     text-align: center;
     padding: 20px 20px 20px 20px;
+    transition: 0.25s;
 }
 
 
@@ -260,7 +277,7 @@ body
     border: #555b6e;
     border-radius: 10px;
     /* padding: 10px; */
-    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 4px rgba(255, 255, 255, 0.5);
 }
 .resume_select
 {
@@ -268,7 +285,7 @@ body
     border: #555b6e;
     border-radius: 10px;
     /* padding: 10px; */
-    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 5px 4px rgba(255, 255, 255, 0.5);
 }
 
 .resume_hidden
@@ -297,7 +314,7 @@ body
 
 .education_details
 {
-    width: 500px;
+    width: 50%;
     background-color: rgba(240, 248, 255, 0.3);
     padding: 10px;
     border-radius: 20px;
@@ -310,6 +327,7 @@ body
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 30px;
 }
@@ -322,7 +340,7 @@ body
 }
 .skills_list
 {
-    width: 30%;
+    width: 300px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -331,7 +349,9 @@ body
 
 #contact
 {
-    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    /* position: relative; */
+    /* padding-bottom: 50px; */
 }
 
 /* for chrome */
@@ -342,4 +362,80 @@ body::-webkit-scrollbar{
 body{
   -ms-overflow-style: none;  
   scrollbar-width: none; 
+}
+
+.menu_bar 
+{
+    position: absolute;
+    right: 40px;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.bar1, .bar2, .bar3 
+{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 
+{
+    transform: translate(0, 11px) rotate(45deg);
+}
+  
+.change .bar2 
+{
+    opacity: 0;
+}
+  
+.change .bar3 
+{
+    transform: translate(0, -11px) rotate(-45deg);
+}
+
+.hidden_class
+{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 860px) 
+{
+    #resume_list ul, #resume_list ul li
+    {
+        width: 100%;
+    }
+
+    #menu_list
+    {
+        /* visibility: hidden; */
+        /* visibility: none; */
+        width: 220px;
+        height: 250px;
+        background-color: #5dc0abb4;
+        color: #333;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-right: 40px;
+        top: 0px;
+        right: 0px;
+        /* display: block; */
+        flex-direction: column;
+    }
+    .menu_bar_list
+    {
+        visibility: hidden;
+    }
+    .menu_bar
+    {
+        visibility: visible;
+        z-index: 1;
+    }
+    .education_details
+    {
+        width: 90%;
+    }
 }
