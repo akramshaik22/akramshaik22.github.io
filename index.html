@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Akram Shaik</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,7 +12,12 @@
     <div id="navbar">
         <img src="assets/img/Akram_profile.jpg" alt="Profile" id="profile_img">
         <span id="name">Akram Shaik</span>
-        <ul>
+        <div class="menu_bar" onclick="menu_change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="menu_list" class="menu_bar_list">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -20,10 +25,15 @@
             <li><a id="download_resume">Download Resume</a></li>
         </ul>
     </div>
+
     <div id="about">
         <!-- <div id="headings">
             <h1>About Me</h1>
         </div> -->
+        <div>
+            <img src="assets/img/Akram_HQ.jpg" alt="Profile" id="about_img">
+        </div>     
+        
         <div>
             <p id="about_info">
                 <span>Hi, I'm &nbsp;</span> <span style="color:chartreuse">  Akram Shaik</span> <span>.</span>
@@ -108,9 +118,7 @@
             </div>
 
         </div>
-        <div>
-            <img src="assets/img/Akram_HQ.jpg" alt="Profile" id="about_img">
-        </div>     
+        
     </div>
 
 
