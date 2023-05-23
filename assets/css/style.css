@@ -225,7 +225,7 @@ body
     /* border: solid 2px white; */
     border-radius: 30px;
     transition: 0.4s;
-    /* color: beige; */
+    color: #cad4df;
     cursor: pointer;
     box-shadow: 0px 0px 9px 4px inset rgba(0, 0, 0, 0.3);
 }
@@ -248,7 +248,6 @@ body
 .project_title
 {
     font-weight: bold;
-    color: #cad4df;
 }
 
 .project_description
