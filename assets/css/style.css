@@ -94,6 +94,21 @@ body
     cursor: pointer;
 }
 
+#download_resume
+{
+    border: solid 1px beige;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 0px 6px 2px bisque;
+}
+
+#download_resume:hover
+{
+    box-shadow: 0px 0px 4px 2px bisque inset;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
 #contact_info
 {
     width: 100%;
@@ -438,5 +453,17 @@ body{
     .education_details
     {
         width: 90%;
+    }
+    #download_resume
+    {
+        box-shadow: none;
+        border: none;
+        padding: 0px;
+        border-radius: 0px;
+    }
+    #download_resume:hover
+    {
+        box-shadow: none;
+        background-color: inherit;
     }
 }
