@@ -11,6 +11,7 @@ function resume_change(info){
         if (education.contains('resume_hidden'))
         {
             education.add('resume_visible')
+            education.remove('resume_hidden')
             education_btn.add('resume_select')
             if (skills.contains('resume_visible'))
             {
@@ -31,6 +32,7 @@ function resume_change(info){
         if (skills.contains('resume_hidden'))
         {
             skills.add('resume_visible')
+            skills.remove('resume_hidden')
             skills_btn.add('resume_select')
             if (education.contains('resume_visible'))
             {
@@ -51,6 +53,7 @@ function resume_change(info){
         if (experience.contains('resume_hidden'))
         {
             experience.add('resume_visible')
+            experience.remove('resume_hidden')
             experience_btn.add('resume_select')
             if (education.contains('resume_visible'))
             {
@@ -68,3 +71,18 @@ function resume_change(info){
     }
     
 }
+
+function menu_change(x) {
+    // x.classList.toggle("change");
+    menu_list = document.getElementsByClassName('menu_bar_list')[0]
+    if(x.classList.contains("change"))
+    {
+        menu_list.style.visibility = 'hidden';
+        x.classList.remove("change");
+    }
+    else
+    {
+        menu_list.style.visibility = 'visible';
+        x.classList.add("change");
+    }
+  }
