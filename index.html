@@ -164,7 +164,7 @@
 
             <div class="project_details">
                 <img src="assets/img/acm_codespace.png" alt="Acm Codespace">
-                <p class="project_title"> FACE DETECTION USING AWS API </p>
+                <p class="project_title"> FACE DETECTION </p>
                 <p class="project_description">This Application is developed to detect students faces in our college using AWS API.</p>
             </div>
             
@@ -187,21 +187,21 @@
 
         <div id="education" class="resume_visible">
             <div class="education_details">
-                <p>2021-2025</p>
-                <h1>Bachelor of Technology</h1>
-                <p>Artificial Intelligence & Machine Learning</p>
-                <p>GMR Institute of Technology, Rajam.</p>
+                <p id="education_year">2021-2025</p><br>
+                <h1 id="education_type">Bachelor of Technology</h1>
+                <p id="education_type">Artificial Intelligence & Machine Learning</p>
+                <p>GMR Institute of Technology, Rajam Vizianagaram.</p>
                 <p>CGPA - 8.5/10</p>
             </div>
             <div class="education_details">
-                <p>2019-2021</p>
-                <h1>Intermediate</h1>
+                <p id="education_year">2019-2021</p><br>
+                <h1 id="education_type">Intermediate</h1>
                 <p>Srichaitanya Boys Junior College, Gollapudi Vijayawada.</p>
                 <p>SCORE - 963/1000</p>
             </div>
             <div class="education_details">
-                <p>2014-2019</p>
-                <h1>High School</h1>
+                <p id="education_year">2014-2019</p><br>
+                <h1 id="education_type">High School</h1>
                 <p>Zilla Parisith High School, T.Narasapuram West Godavari.</p>
                 <p>CGPA - 9.5/10</p>
             </div>
@@ -240,6 +240,7 @@
         </div>
 
         <div id="experience" class="resume_hidden">
+            No Experience yet...
         </div>
 
     </div>
@@ -248,6 +249,27 @@
         <div id="headings">
             <h1>Contact</h1>
         </div>
+
+        <form action="/">
+            <h1>Connect With Me</h1>
+            <div id="connect_me">
+                <div id="sender_details">
+                    <label for="name">Name</label>
+                    <input type="text" name="name"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email"><br>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject">
+                </div>
+                <div id="sender_message">
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submit">Send Message</button>
+        </form>
         <div id="contact_info">
 
             <div class="outer_contact_icon">
