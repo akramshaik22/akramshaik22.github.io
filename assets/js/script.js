@@ -5,7 +5,8 @@ let education_btn = document.getElementById('education_btn').classList
 let skills_btn = document.getElementById('skills_btn').classList
 let experience_btn = document.getElementById('experience_btn').classList
 
-function resume_change(info){
+function resume_change(info)
+{
     if(info==1)
     {
         if (education.contains('resume_hidden'))
@@ -72,7 +73,8 @@ function resume_change(info){
     
 }
 
-function menu_change(x) {
+function menu_change(x) 
+{
     // x.classList.toggle("change");
     menu_list = document.getElementsByClassName('menu_bar_list')[0]
     if(x.classList.contains("change"))
@@ -85,4 +87,10 @@ function menu_change(x) {
         menu_list.style.visibility = 'visible';
         x.classList.add("change");
     }
-  }
+}
+
+function copy_text()
+{
+    // console.log("copyed");
+    navigator.clipboard.writeText("+918125460302");
+}
