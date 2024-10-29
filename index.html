@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta author="Akram Shaik" content="This Portfolio is designed to showcase my skills. Iam graduating from GMRIT College.">
+    <title>Akram Shaik</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div id="navbar">
+        <img src="assets/img/Akram_profile.jpg" alt="Profile" id="profile_img">
+        <span id="name">Akram Shaik</span>
+        <div class="menu_bar" onclick="menu_change(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="menu_list" class="menu_bar_list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="download_resume" href="resume/AkramShaik.pdf" target="_blank">Download Resume</a></li>
+        </ul>
+    </div>
+
+    <div id="about">
+        <!-- <div id="headings">
+            <h1>About Me</h1>
+        </div> -->
+        <div>
+            <img src="assets/img/Akram_HQ.jpg" alt="Profile" id="about_img">
+        </div>     
+        
+        <div>
+            <p id="about_info">
+                <span>Hi, I'm &nbsp;</span> <span style="color:chartreuse">  Akram Shaik</span> <span>.</span>
+            </p>
+
+            <div id="contact_info">
+
+                <div class="outer_contact_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" id="linkedin" class="contact_icon">
+                        <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"></path> 
+                        
+                        <a href="https://www.linkedin.com/in/akramshaik22" target="_blank">
+                            <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="outer_contact_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="email" class="contact_icon">
+                        <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z"></path>
+                    
+                        <a href="mailto:akramshaikssaba@gmail.com" target="_blank">
+                            <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="outer_contact_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="whatsapp" class="contact_icon" stroke-width="0"> 
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> 
+        
+                        <a href="https://wa.me/918125460302" target="_blank">
+                            <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                        </a>
+                    </svg>
+                </div>
+            
+                <div class="outer_contact_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram" class="contact_icon" stroke-width="0"> 
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> 
+        
+                        <a href="https://instagram.com/akramshaik2222?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                            <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                        </a>
+                    </svg>
+                </div>
+
+                <!-- <div class="outer_contact_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="phone" class="contact_icon" stroke-width="0"> 
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path> 
+        
+                        <a onclick="copy_text()">
+                            <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                        </a>
+                    </svg>
+                </div> -->
+      
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    
+
+    <div id="projects">
+
+        <div id="headings">
+            <h1>Projects</h1>
+        </div>
+
+        <div class="projects_list">
+
+            <div class="project_details">
+                    <img src="assets/img/acm_codespace6.png" alt="Acm Codespace">
+                    <div class="view_project">
+                        <a href="https://www.linkedin.com/posts/akramshaik22_connections-web-python-activity-7062110232054820864-mmYb?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </a>
+                    </div>
+                    <p class="project_title"> ACM CODESPACE </p>
+                    <p class="project_description">This Web Application is developed for conducting the Coding Contests in our college.</p>
+            </div>
+
+            <div class="project_details">
+                <img src="assets/img/passing_code2.png" alt="Passing Code">
+                <div class="view_project">
+                    <a href="https://www.linkedin.com/posts/akramshaik22_python-tkinter-gui-activity-7011443761859768320-J2dY?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+                <p class="project_title"> PASSING CODE </p>
+                <p class="project_description">This Python Application is developed for conducting the Coding Contest in our college.</p>
+            </div>
+
+            <div class="project_details">
+                <img src="assets/img/chess1.png" alt="Chess Game">
+                <div class="view_project">
+                    <a href="https://www.linkedin.com/posts/akramshaik22_python-project-tkinter-activity-6954384136224604160-w06I?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+                <p class="project_title"> CHESS GAME </p>
+                <p class="project_description">It is a Simple 2 player Offline Chess Game developed using Python.</p>
+            </div>
+
+            <div class="project_details">
+                <img src="assets/img/ai_robo.jpg" alt="AI Robo">
+                <div class="view_project">
+                    <a href="https://www.linkedin.com/posts/akramshaik22_python-project-imageprocessing-activity-7013544737911558144-Bcex?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+                <p class="project_title"> Controlling RC Car with Hand Signs </p>
+                <p class="project_description">An Algorithm is developed to Detect our 5 Hand Signs to Control an RC-Car.</p>
+            </div>
+
+            <div class="project_details">
+                <img src="assets/img/bank_management_system1.png" alt="Bank Management System">
+                <div class="view_project">
+                    <a href="https://www.linkedin.com/posts/akramshaik22_c-bank-management-activity-7011446998943891456-IU-w?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+                <p class="project_title"> BANK MANAGEMENT SYSTEM </p>
+                <p class="project_description">This Application is developed using File Management System in C Language.</p>
+            </div>
+
+            <div class="project_details">
+                <img src="assets/img/face_detection1.png" alt="Face Detection">
+                <div class="view_project">
+                    <a href="https://www.linkedin.com/posts/akramshaik22_python-facerecognition-aws-activity-7011441249853345792-NiTi?utm_source=share&utm_medium=member_desktop" target="_blank">View Project
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M10.0002 5H8.2002C7.08009 5 6.51962 5 6.0918 5.21799C5.71547 5.40973 5.40973 5.71547 5.21799 6.0918C5 6.51962 5 7.08009 5 8.2002V15.8002C5 16.9203 5 17.4801 5.21799 17.9079C5.40973 18.2842 5.71547 18.5905 6.0918 18.7822C6.5192 19 7.07899 19 8.19691 19H15.8031C16.921 19 17.48 19 17.9074 18.7822C18.2837 18.5905 18.5905 18.2839 18.7822 17.9076C19 17.4802 19 16.921 19 15.8031V14M20 9V4M20 4H15M20 4L13 11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </a>
+                </div>
+                <p class="project_title"> FACE DETECTION </p>
+                <p class="project_description">This Application is developed to detect students faces in our college using AWS API.</p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div id="resume">
+        <div id="headings">
+            <h1>Resume</h1>
+        </div>
+
+        <div id="resume_list">
+            <ul>
+                <li id="education_btn" class="resume_select" onclick="resume_change(1)">Education</li>
+                <li id="skills_btn" onclick="resume_change(2)">Skills</li>
+                <li id="experience_btn" onclick="resume_change(3)">Experience</li>
+            </ul>
+        </div>
+
+        <div id="education" class="resume_visible">
+            <div class="education_details">
+                <p id="education_year">2021 - 2025</p><br>
+                <h1 id="education_type">Bachelor of Technology</h1>
+                <p id="education_type">Artificial Intelligence & Machine Learning</p>
+                <p>GMR Institute of Technology, Rajam Vizianagaram.</p>
+                <p>CGPA - 8.5/10</p>
+            </div>
+            <div class="education_details">
+                <p id="education_year">2019 - 2021</p><br>
+                <h1 id="education_type">Intermediate</h1>
+                <p>Srichaitanya Boys Junior College, Gollapudi Vijayawada.</p>
+                <p>SCORE - 963/1000</p>
+            </div>
+            <div class="education_details">
+                <p id="education_year">2014 - 2019</p><br>
+                <h1 id="education_type">High School</h1>
+                <p>Zilla Parisith High School, T.Narasapuram West Godavari.</p>
+                <p>CGPA - 9.5/10</p>
+            </div>
+        </div>
+
+        <div id="skills" class="resume_hidden">
+            <div class="skills_list">
+                
+                <div class="skills_value" style="width: 85%;">
+                    <span>Python</span><span>85%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 85%;"></div>
+                </div><br><br>
+
+                <div class="skills_value" style="width: 75%;">
+                    <span>C</span><span>75%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 75%;"></div>
+                </div><br><br>
+
+                <div class="skills_value" style="width: 65%;">
+                    <span>Java</span><span>65%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 65%;"></div>
+                </div><br><br>
+                
+            </div>
+            <div class="skills_list">
+                <div class="skills_value" style="width: 85%;">
+                    <span>Django</span><span>85%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 85%;"></div>
+                </div><br><br>
+
+                <div class="skills_value" style="width: 75%;">
+                    <span>HTML, CSS</span><span>75%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 75%;"></div>
+                </div><br><br>
+
+                <div class="skills_value" style="width: 65%;">
+                    <span>Java Script</span><span>65%</span>
+                </div>
+                <div class="outer_prog">
+                    <div class="inner_prog"  style="width: 65%;"></div>
+                </div><br><br>
+
+            </div>
+
+        </div>
+
+        <div id="experience" class="resume_hidden">
+            No Experience yet...
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <div id="headings">
+            <h1>Contact</h1>
+        </div>
+
+        <form action="mailto:akramshaikssaba@gmail.com" method="post" enctype="text/plain">
+            <h1>Connect With Me</h1>
+            <div class="contact_details">
+                <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="phone" class="contact_info_icon"> 
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path> 
+                            <a onclick="copy_text()">
+                                <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                            </a>
+                        </svg>
+
+                    <h2>Phone Number</h2>
+                    <p>+91 8125460302</p>
+                </div>
+
+                <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="email" class="contact_info_icon">
+                            <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z"></path>
+                        </svg>
+
+                    <h2>Email Address</h2>
+                    <p>akramshaikssaba@gmail.com</p>
+                </div>
+
+                <div>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="address" class="contact_info_icon" viewBox="0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </g>
+                        </svg>
+
+                    <h2>Address</h2>
+                    <p>Rajam, Vizianagaram, Andhra Pradesh</p>
+                </div>
+            </div>
+            <div id="connect_me">
+                <div id="sender_details">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter Your Name"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter Your Email"><br>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div id="sender_message">
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="submit" value="send">Send Message</button>
+        </form>
+        <div id="contact_info">
+
+            <div class="outer_contact_icon">
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="github" class="contact_icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g>
+                    <a href="https://github.com/akramshaik22" target="_blank">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div>
+
+            <div class="outer_contact_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" id="linkedin" class="contact_icon">
+                    <path d="M1168 601.321v74.955c72.312-44.925 155.796-71.11 282.643-71.11 412.852 0 465.705 308.588 465.705 577.417v733.213L1438.991 1920v-701.261c0-117.718-42.162-140.06-120.12-140.06-74.114 0-120.12 23.423-120.12 140.06V1920l-483.604-4.204V601.32H1168Zm-687.52-.792v1318.918H0V600.53h480.48Zm-120.12 120.12H120.12v1078.678h240.24V720.65Zm687.52.792H835.267v1075.316l243.364 2.162v-580.18c0-226.427 150.51-260.18 240.24-260.18 109.55 0 240.24 45.165 240.24 260.18v580.18l237.117-2.162v-614.174c0-333.334-93.573-457.298-345.585-457.298-151.472 0-217.057 44.925-281.322 98.98l-16.696 14.173H1047.88V721.441ZM240.24 0c132.493 0 240.24 107.748 240.24 240.24 0 132.493-107.747 240.24-240.24 240.24C107.748 480.48 0 372.733 0 240.24 0 107.748 107.748 0 240.24 0Zm0 120.12c-66.186 0-120.12 53.934-120.12 120.12s53.934 120.12 120.12 120.12 120.12-53.934 120.12-120.12-53.934-120.12-120.12-120.12Z" fill-rule="evenodd"></path> 
+                    
+                    <a href="https://www.linkedin.com/in/akram-shaik-7597ba224" target="_blank">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div>
+
+            <div class="outer_contact_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="email" class="contact_icon">
+                    <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345 c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345 C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203 c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958 c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064 c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571 c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637 L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136 C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435 C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959 l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959 C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8 V385.92z"></path>
+                
+                    <a href="mailto:akramshaikssaba@gmail.com" target="_blank">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div>
+
+            <div class="outer_contact_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="whatsapp" class="contact_icon"> 
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> 
+    
+                    <a href="https://wa.me/918125460302" target="_blank">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div>
+        
+            <div class="outer_contact_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram" class="contact_icon"> 
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> 
+    
+                    <a href="https://instagram.com/akramshaik2222?igshid=ZGUzMzM3NWJiOQ==" target="_blank">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div>
+
+            <!-- <div class="outer_contact_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="phone" class="contact_icon"> 
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path> 
+    
+                    <a onclick="copy_text()">
+                        <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/>
+                    </a>
+                </svg>
+            </div> -->
+  
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
